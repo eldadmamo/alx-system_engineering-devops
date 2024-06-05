@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-    module contains the function top_ten
+   module contains the function top_ten
 '''
 import requests
 from sys import argv
@@ -8,7 +8,7 @@ from sys import argv
 
 def top_ten(subreddit):
     '''
-        top ten posts for a given subreddit
+        returns the top ten posts for a given subreddit
     '''
     user = {'User-Agent': 'Lizzie'}
     url = requests.get('https://www.reddit.com/r/{}/hot/.json?limit=10'
